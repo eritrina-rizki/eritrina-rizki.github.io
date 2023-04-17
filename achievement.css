@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url(./profile.css);
+
+.header{
+    width: 100%;
+    height: 300px;
+    background: url(./images/2.jpg);
+    background-position: top;
+    animation: none;
+}
+
+#navbarAchi{
+    color: #D1B264;
+    font-weight: 700;
+}
+
+.contentContainer{
+    height: max-content;
+    margin: 60px 120px;
+}
+
+.multiTab{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:last baseline;
+    transition: all 0.3s ease;
+}
+
+.tabBtn{
+    width: 100%;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #b3b3b3;
+    background: white;
+    font-size: 24px;
+    font-weight: 400;
+    color: #b3b3b3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tabBtn:hover{
+    background: antiquewhite;
+    font-weight: 700;
+    color:#D1B264;
+    transition: all 0.3s ease;
+}
+
+.tabBtn.active{
+    color: #D1B264;
+    font-weight: 700;
+    border-bottom: 3px solid #D1B264;
+    transition: all 0.3s ease;
+}
+
+.tabContent{
+    width: fit-content;
+    margin: 30px 0;
+    padding: 0 0 0 20px;
+    border-left: 3px solid #D1B264;
+    display: none;
+}
+
+.tabContent.active{
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.paragraph{
+    width: 70%;
+    height: fit-content;
+    margin: 12px 0;
+    padding: 25px;
+    background: antiquewhite;
+    border-right: 3px solid #D1B264;
+    font-size: 18px;
+    font-weight: 400;
+    color: #2e2e2e;
+    animation: moving 0.8s ease;
+}
+
+@keyframes moving{
+    from{transform: translateX(-10px); opacity: 0;}
+    to{transform: translateX(0); opacity: 1;}
+}
+
+.points{
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid #D1B264;
+    position: absolute;
+    left: 114px;
+}
+
+.arrows{
+    content: "";
+    width: 0;
+    height: 0px;
+    position: absolute;
+    border-style: solid;
+    border-color: transparent antiquewhite transparent transparent;
+    border-width: 8px;
+    left: 128px;
+}
+
+.paragraph:hover{
+    width: 90%;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+
+@media(min-width: 1441px){
+    .contentContainer{
+        display: flex;
+        justify-content: center;
+    }
+    .achiContent{
+        width: 800px;
+    }
+    .points, .arrows{
+        display: none;
+    }
+}
+
+@media(max-width: 1178px){
+    .contentContainer{
+        margin: 30px 120px;
+    }
+    .paragraph{
+        width: 80%;
+    }
+}
+
+@media(max-width: 1115px){
+    .tabBtn{
+        padding: 10px;
+    }
+}
+
+@media(max-width: 1000px){
+    .contentContainer{
+        margin: 30px 60px;
+    }
+    .points{
+        left: 54px;
+    }
+    .arrows{
+        left: 67px;
+    }
+    .tabBtn{
+        padding: 5px;
+        font-size: 20px;
+    }
+    .paragraph{
+        width: 90%;
+    }
+    .paragraph:hover{
+        width: 100%;
+    }
+}
+
+@media(max-width: 715px){
+    .multiTab{
+        justify-content: center;
+    }
+    .tabBtn{
+        width: fit-content;
+        padding: 0 10px;
+        font-size: 18px;
+    }
+    .contentContainer{
+        margin: 30px 60px;
+    }
+    .tabContent, .tabBtn.active{
+        margin: 15px 0;
+    }
+    .paragraph{
+        width: 95%;
+        font-size: 16px;
+    }
+    .paragraph:hover{
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 545px){
+    .header{
+        height: 220px;
+    }
+    .tabBtn{
+        font-size: 16px;
+    }
+    .contentContainer{
+        margin: 30px;
+    }
+    .points{
+        left: 24px;
+    }
+    .arrows{
+        left: 38px;
+    }
+    .paragraph{
+        width: 100%;
+    }
+}
+
+@media(max-width: 450px){
+    .contentContainer{
+        margin: 30px 20px;
+    }
+    .tabBtn{
+        font-size: 14px;
+        padding: 0 5px;
+    }
+    .paragraph{
+        font-size: 14px;
+    }
+    .paragraph:hover{
+        font-size: 16px;
+    }
+    .points{
+        left: 14px;
+    }
+    .arrows{
+        left: 28px;
+    }
+}

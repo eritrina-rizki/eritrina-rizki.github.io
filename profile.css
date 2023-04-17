@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url(./index.css);
+
+.header{
+    width: 100%;
+    height: 300px;
+    background: url(./images/1.jpg);
+    background-position: center -100px;
+    animation: none;
+}
+
+#navbarProfile{
+    color: #D1B264;
+    font-weight: 700;
+}
+
+.pageTitle{
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    transition: all 0.3s ease;
+}
+
+.pageTitle span{
+    color: #D1B264;
+}
+
+.profileContent{
+    height: fit-content;
+    margin: 60px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #2e2e2e;
+}
+
+.profileContent img{
+    width: 100%;
+}
+
+.slideshowContainer{
+    position: relative;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+.prevBtn, .nextBtn{
+    outline: none;
+    border: none;
+    background: #2e2e2e88;
+    stroke: white;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 12px 8px;
+    margin-top: -60px;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.nextBtn{
+    right: 0;
+}
+
+.prevBtn:hover, .nextBtn:hover{
+    background-color: #2e2e2ee0;
+}
+
+.slideshowContainer svg{
+    width: 28px;
+    height: 28px;
+}
+
+.slideshow img{
+    -webkit-animation: fade 1.5s forwards;
+    animation: fade 1.5s forwards;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+.about{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.aboutContainer{
+    padding: 0 0 60px 0;
+    transition: all 0.3s ease;
+}
+
+.about p{
+    padding-bottom: 15px;
+    text-indent: 20px;
+    font-size: 18px;
+}
+
+.schoolName{
+    color: #D1B264;
+}
+
+.horizonTag{
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    margin: 30px 0;
+    transition: all 0.3s ease;
+}
+
+.aboutTitle, .vision h2, .mission h2{
+    margin-bottom: 8px;
+    font-size: 35px;
+}
+
+.aboutLogo{
+    width: 2000px;
+    position: relative;
+    top: -40px;
+    transition: all 0.3s ease;
+}
+
+.vimiBg{
+    height: 650px;
+}
+
+.vimiContainer{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 120px;
+    gap: 90px;
+    background: url(/Assignment/images/4.jpg);
+    background-position: left top -130px;
+    color: #2e2e2e;
+    transition: all 0.3s ease;
+}
+
+.vision, .mission{
+    padding: 30px 60px;
+    background-color: antiquewhite;
+    text-align: left;
+    position: relative;
+    top: -130px;
+    transition: all 0.3s ease;
+}
+
+.vision{
+    width: 50%;
+    border-right: 5px solid #D1B264;
+    text-align: right;
+    left: 50%;
+}
+
+.mission{
+    width: 80%;
+    border-left: 5px solid #D1B264;
+    text-align: left;
+    left: 0;
+}
+
+.vision p, .mission p, li{
+    font-size: 18px;
+}
+
+li{
+    padding-top: 10px;
+    list-style-position: inside;
+}
+
+.authorLine{
+    margin-top: 20px;
+}
+
+
+
+@media(min-width: 1441px) {
+    .profileContent{
+        justify-content: center;
+        align-items: center;
+        margin: 60px 60px;
+    }    
+    .slideshowContainer svg{
+        width: 32px;
+        height: 32px;
+    }
+    .aboutLogo{
+        width: 1000px;
+    }
+    .vimiContainer{
+        width: 1500px;
+        gap: 60px;
+        margin: 0 60px;
+    }
+    .horizonTag, .about{
+        width: 1500px;
+    }
+    .vimiBg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 1178px){
+    .vimiBg{
+        height: 680px;
+    }
+    .vision{
+        width: 60%;
+        left: 40%;
+    }
+    .mission{
+        width: 90%;
+    }
+}
+
+@media(max-width: 1115px){
+    .mission{
+        width: 100%;
+    }
+}
+
+@media(max-width: 1000px){
+    .vimiBg{
+        height: 600px;
+    }
+    .profileContent{
+        margin: 30px 60px;
+    }
+    .vimiContainer{
+        padding: 60px 60px;
+        gap: 50px;
+    }
+    .vision{
+        width: 80%;
+        left: 20%;
+    }
+    .horizonTag, .aboutTitle, .vision h2, .mission h2{
+        font-size: 28px;
+    }
+    .about p, .vision p, .mission p, li{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 715px){
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .aboutLogo{
+        width: 200px;
+        position:initial;
+    }
+    .vision, .mission{
+        padding: 20px 40px;
+    }
+    .vision{
+        width: 100%;
+        left: 0;
+    }
+}
+
+@media(max-width: 545px){
+    .header{
+        height: 220px;
+    }
+    .pageTitle{
+        font-size: 24px;
+    }
+    .aboutLogo{
+        width: 150px;
+    }
+    .vimiBg{
+        height: 570px;
+    }
+    .profileContent{
+        margin: 16px 32px 60px;
+    }
+    .vimiContainer{
+        padding: 32px 32px;
+        gap: 30px;
+    }
+    .vision, .mission{
+        padding: 15px 30px;
+    }
+    .horizonTag, .aboutTitle, .vision h2, .mission h2{
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 450px){
+    .pageTitle{
+        font-size: 18px;
+    }
+    .vimiBg{
+        height: 600px;
+    }
+    .prevBtn, .nextBtn{
+        padding: 8px 2px;
+    }
+    .slideshowContainer{
+        padding-bottom: 40px;
+    }
+    .slideshowContainer svg{
+        width: 24px;
+        height: 24px;
+    }
+    .about{
+        gap: 30px;
+    }
+    .aboutLogo{
+        width: 120px;
+    }
+    .profileContent{
+        margin: 0px 16px;
+    }
+    .vimiContainer{
+        padding: 16px 16px;
+        gap: 30px;
+    }
+    .vision, .mission{
+        padding: 12px 16px;
+        top: -60px;
+    }
+    .about p, .vision p, .mission p, li{
+        font-size: 14px;
+    }
+}

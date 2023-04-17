@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./achievement.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="./images/horizon-high-resolution-logo-color-on-transparent-background.png">
+    <title>Achievement - Horizon International High School</title>
+</head>
+<body>
+    <section id="home" class="header">
+        <div class="banner">
+            <div class="containerHeader">
+                <input id="menu" type="checkbox">
+                <label for="menu" class="menuBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </label>  
+                
+                <div class="menuNew">
+                    <input id="menu" type="checkbox">
+                    <label for="menu" class="menuBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                          </svg>                       
+                    </label>  
+                    <a href="index.html" class="navbarNew">Home</a>
+                    <a href="profile.html" class="navbarNew">Our Profile</a>
+                    <a href="#" id="navbarAchi" class="navbarNew">Achievement</a>
+                    <a href="index.html#messageUs" class="navbarNew">Message Us</a>
+                </div>
+
+                <nav>
+                    <a href="index.html" class="navbar">Home</a>
+                    <a href="profile.html" class="navbar">Our Profile</a>
+                </nav>
+                <img src="./images/horizon-high-resolution-logo-color-on-transparent-background.png" class="logoHorizon" alt="Horizon Logo">
+                <nav>
+                    <a href="#" id="navbarAchi" class="navbar">Achievement</a>
+                    <a href="index.html#messageUs" class="navbar">Message Us</a>
+                </nav>
+            </div>
+            <div class="pageTitle">
+                <h1>Our <span>Achievement</span></h1>
+            </div>
+        </div>
+    </section>
+    <section class="contentContainer">
+        <div class="achiContent">
+            <div class="multiTab">
+                <button id="academicBtn" class="tabBtn active">Academic</button>
+                <button id="extraBtn" class="tabBtn">Extracurricular</button>
+                <button id="comBtn" class="tabBtn">Community Service</button>
+            </div>
+            <div id="content1" class="tabContent active">
+                <span class="points"></span>
+                <span class="arrows"></span>
+                <div class="paragraph">
+                    <p>In the past year, <strong>95%</strong> of our graduating students were <strong>accepted to top-ranked universities around the world</strong>, including Harvard, Oxford, and Stanford.</p>
+                </div>
+                <span class="points"></span>
+                <span class="arrows"></span>
+                <div class="paragraph">
+                    <p>Our school received recognition as the <strong>top-performing high school</strong> in the state for the second year in a row, based on national and international exam scores.</p>
+                </div>
+                <span class="arrows"></span>
+                <span class="points"></span>
+                <div class="paragraph">
+                    <p>Our teachers <strong>published several research papers and articles</strong> in prestigious academic journals, furthering the knowledge and understanding in their respective fields.</p>
+                </div>
+            </div>
+            <div id="content2" class="tabContent">
+                <span class="points"></span>
+                <span class="arrows"></span>
+                <div class="paragraph">
+                    <p><strong>Our debate team won first place</strong> in the National High School Debate Championship, competing against schools from across the country.</p>
+                </div>
+                <span class="points"></span>
+                <span class="arrows"></span>
+                <div class="paragraph">
+                    <p><strong>Our school's music program</strong> organized a charity concert that <strong>raised over $10,000</strong> for a local non-profit organization.</p>
+                </div>
+                <span class="arrows"></span>
+                <span class="points"></span>
+                <div class="paragraph">
+                    <p><strong>Our sports teams won several regional and state championships</strong>, including the state basketball championship and the regional soccer championship.</p>
+                </div>
+            </div>
+            <div id="content3" class="tabContent">
+                <span class="points"></span>
+                <span class="arrows"></span>
+                <div class="paragraph">
+                    <p>Our students <strong>volunteered over 5,000 hours</strong> of community service in the past year, supporting local charities and organizations focused on environmental conservation, education, and health care.</p>
+                </div>
+                <span class="points"></span>
+                <span class="arrows"></span>
+                <div class="paragraph">
+                    <p>Our school <strong>established a new partnership</strong> with an international organization to support educational programs in developing countries, providing our students with valuable opportunities to engage in global service projects.</p>
+                </div>
+                <span class="arrows"></span>
+                <span class="points"></span>
+                <div class="paragraph">
+                    <p>Our school's social responsibility initiatives <strong>received recognition from the United Nations</strong>, earning us the "Global School of the Year" award.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="author">
+            <p class="authorLine">Created by <a class="authorLink" href="https://linkedin.com/in/eritrina-rizki-chairani"><strong>Eritrina Rizki Chairani</strong></a></p>
+        </div>
+    </section>
+
+    <script>
+        const tabs = document.querySelectorAll('.tabBtn');
+        const contents = document.querySelectorAll('.tabContent');
+
+        tabs.forEach((tab, index) => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(tab => {tab.classList.remove('active')})
+                tab.classList.add('active')
+
+            contents.forEach(content => {content.classList.remove('active')});
+                contents[index].classList.add('active');
+            })
+        })
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url(./images/1.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: changeImage 20s linear 30s infinite;
+}
+
+@keyframes changeImage {
+    25% {
+        background: url(./images/1.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+
+    }
+    50% {
+        background: url(./images/2.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+
+    }
+    75% {
+        background: url(./images/3.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+
+    }
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.containerHeader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoHorizon{
+    width: 180px;
+    padding: 20px 30px;
+    transition: all 0.3s ease;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar, .navbarNew{
+    width: 160px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar:hover, .navbarNew:hover{
+    color: #D1B264;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+#navbarHome{
+    color: #D1B264;
+    font-weight: 700;
+}
+
+.menuBtn svg{
+    color: white;
+    width: 28px;
+    height: 28px;
+}
+
+.menuBtn svg:hover{
+    color: #D1B264;
+}
+
+.menuBtn{
+    display: none;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+#menu{
+    display: none;
+}
+
+.menuNew{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #700e0e;
+    width: 100%;
+    height: fit-content;
+    top: -100%;
+    left: 0;
+    padding: 10px;
+    box-shadow: 0 4px 20px #00000041;
+    transition: all 0.8s;
+}
+
+.hero{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: auto 120px;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome{
+    display: flex;
+    margin-top: 40px;
+    gap: 8px;
+}
+
+.hiWelcome{
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.nameInput{
+    content: "";
+    outline: none;
+    border: none;
+    background: none;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    cursor: text;
+    transition: all 0.3s ease;
+}
+
+.nameInput:hover{
+    content: "";
+    outline: none;
+    border: none;
+    background: #700e0ecb;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    cursor: text;
+    transition: all 0.3s ease;
+}
+
+.nameInput:focus{
+    content: "";
+    outline: none;
+    border-bottom: 1px solid #D1B264;
+    background: none;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    cursor: text;
+    transition: all 0.3s ease;
+}
+
+.tagline{
+    margin: 0 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleTagline{
+    color: white;
+    padding: 15px 0;
+    font-size: 42px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.titleHorizon{
+    color: #D1B264;
+}
+
+.descriptionTagline{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.profileBtn{
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 50px 0;
+    font-size: 18px;
+    font-weight: 700;
+    background: #D1B264;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.profileBtn:hover{
+    color: #ceb169;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+.ourFacilitation{
+    margin: 60px 120px;
+}
+
+.titleOur{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.titleFacilitation{
+    padding: 0 30px;
+    border: 3px solid #D1B264;
+    font-size: 35px;
+    font-weight: 700;
+    color: #2e2e2e;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.contentOur{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentFacilitation{
+    padding: 0 25px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+    color: #4d4d4d;
+    transition: all 0.3s ease;
+}
+
+.contentFacilitation:hover{
+    font-weight: 700;
+    color: #D1B264;
+    position: relative;
+    top: -30px;
+    transition: all 0.3s ease;
+}
+
+.imgContent{
+    width: 250px;
+    margin-bottom: 25px;
+    border-radius: 500px;
+    background: #D1B264;
+    background-position: bottom;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+.footer{
+    background: #700e0e;
+    min-height:fit-content;
+    padding: 0 10px;
+}
+
+.containerFooter{
+    gap: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 60px 60px;
+}
+
+.inputForm{
+    max-width: 600px;
+    width: 100%;
+    border: 3px solid #D1B264;
+    margin: 20px auto;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.headerForm{
+    margin-bottom: 25px;
+}
+
+.title{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #D1B264;
+    text-transform: initial;
+    text-align: left;
+}
+
+.description{
+    font-size: 18px;
+    font-weight: 400;
+    color: #b3b3b3;
+    text-transform: none;
+    text-align: left;
+}
+
+.form{
+    width: 100%;
+}
+
+.inputField, .primaryBtn{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.inputField label{
+    width: 280px;
+    color: white;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.input, .tanggalLahir, .textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #ffffff2f;
+    color: white;
+    background-color: #ffffff1e;
+    font-size: 18px;
+    padding: 10px 12px;
+    cursor: text;
+    transition: all 0.3s ease;
+}
+
+.input::placeholder, .tanggalLahir::placeholder, .textarea::placeholder{
+    color: #b3b3b3;
+}
+
+.input:hover, .tanggalLahir:hover, .inputForm .form .inputField .textarea:hover{
+    background: #ffffff2c;
+}
+
+.input:focus, .tanggalLahir:focus, .textarea:focus{
+    border: 1px solid #D1B264;
+    background: #ffffff1e;
+}
+
+::-webkit-calendar-picker-indicator{
+    background-color: #D1B264;
+    cursor: pointer;
+}
+
+.textarea{
+    resize: none;
+    height: 125px;
+}
+
+.jenisKelamin{
+    width: 100%;
+    color: white;
+}
+
+.labelJK{
+    position: relative;
+    padding: 0 25px;
+    cursor: pointer;
+}
+
+.jenisKelamin input[type="radio"]{
+    display: none;
+    cursor: pointer;
+}
+
+.labelJK span{
+    height: 16px;
+    width: 16px;
+    border: 2px solid #D1B264;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 12%;
+    left: 0;
+}
+
+.labelJK span:after{
+    content: "";
+    width: 9px;
+    height: 9px;
+    background: #D1B264;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    border-radius: 50%;
+    transition: 300ms ease-in-out 0s;
+}
+
+.jenisKelamin input[type="radio"]:checked ~ span:after{
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.submitBtn{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    background: #D1B264;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.submitBtn:hover{
+    color: #ceb169;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.outputForm{
+    max-width: 600px;
+    width: 100%;
+    border: 3px solid #D1B264;
+    margin: 20px auto;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.output{
+    display: flex;
+    color: white;
+    padding-bottom: 25px;
+    font-size: 18px;
+}
+
+.output label{
+    width: 150px;
+    color: white;
+    margin-right: 10px;
+}
+
+.divider{
+    margin-right: 10px;
+}
+
+.labelOutput{
+    display: flex;
+}
+
+.author{
+    margin-bottom: 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.authorLine{
+    color: white;
+}
+
+.authorLink{
+    color: #D1B264;
+    text-decoration: underline;
+}
+
+
+
+@media(min-width: 1441px){
+    .header{
+        height: fit-content;
+    }
+    .hero{
+        width: 100%;
+        margin: 0;
+    }
+    .titleTagline, .descriptionTagline{
+        width: 1500px;
+        justify-content: center;
+    }
+    .contentOur, .containerFooter{
+        justify-content: center;
+        gap: 150px;
+    }
+    .inputForm, .outputForm{
+        margin: 20px 0;
+    }
+}
+
+@media(max-width: 1140px){
+    .header{
+        height: fit-content;
+    }
+    .hero{
+        margin: auto 10px;
+    }
+    .imgContent{
+        width: 220px;
+    }
+}
+
+@media(max-width: 1115px){
+    .header{
+        height: 100vh;
+    }
+    .logoHorizon{
+        width: 170px;
+    }
+    .navbar{
+        width: 120px;
+        padding: 10px;
+        color: white;
+    }
+    .output{
+        flex-direction: column;
+    }
+    .output label{
+        width: auto;
+        margin: 0 5px 8px 0;
+    }
+}
+
+@media(max-width: 1000px){
+    .header{
+        height: fit-content;
+    }
+    .tagline{
+        margin: 0 60px;
+    }
+    .contentOur{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .imgContent{
+        width: 300px;
+    }
+    .inputField, .primaryBtn{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+    .inputField label{
+        width: 100%;
+        margin: 0 0 8px 0;
+    }
+}
+
+@media(max-width: 715px){
+    .containerHeader{
+        width: 72%;
+        justify-content: space-between;  
+        margin: 0 30px;
+    }
+    .navbar{
+        display: none;
+    }
+    .menuBtn{
+        display: flex;
+    }
+    #menu:checked ~ .menuNew{
+        top: 0;
+    }
+    .containerFooter{
+        flex-direction: column;
+    }
+    .imgContent{
+        width: 250px;
+    }
+    .ourFacilitation{
+        margin: 60px 30px;
+    }
+}
+
+@media(max-width: 545px){
+    .tagline{
+        margin: 0 32px;
+    }
+    .titleTagline{
+        font-size: 35px;
+    }    
+    .hiWelcome, .nameInput, .input:hover, .input:focus{
+        font-size: 20px;
+    }
+    .titleFacilitation{
+        font-size: 28px;
+    }
+    .titleContent, .title{
+        font-size: 24px;
+    }
+    .containerFooter{
+        margin: 60px 32px;
+    }
+    .navbar, .navbarNew, .descriptionTagline, .description, .inputField label, .input, .input:hover, .input:focus, .tanggalLahir, .tanggalLahir:hover, .tanggalLahir:focus, .textarea, .textarea:hover, .textarea:focus, .output, .profileBtn, .profileBtn:hover, .submitBtn, .submitBtn:hover{
+        font-size: 16px;
+    }
+    .imgContent{
+        width: 180px;
+    }
+}
+
+@media(max-width: 450px){
+    .menuBtn svg{
+        width: 24px;
+        height: 24px;
+    }
+    .tagline{
+        margin: 0 16px;
+    }
+    .titleTagline{
+        font-size: 28px;
+    }
+    .hiWelcome, .nameInput, .nameInput:hover, .nameInput:focus, .titleContent{
+        font-size: 18px;
+    }
+    .titleFacilitation{
+        font-size: 24px;
+    }
+    .containerFooter{
+        margin: 60px 16px;
+    }
+    .inputForm, .outputForm{
+        padding: 20px;
+    }
+    .navbar, .navbarNew, .descriptionTagline, .description, .inputField label, .input, .input:hover, .input:focus, .tanggalLahir, .tanggalLahir:hover, .tanggalLahir:focus, .textarea, .textarea:hover, .textarea:focus, .output, .profileBtn, .profileBtn:hover, .submitBtn, .submitBtn:hover{
+        font-size: 14px;
+    }
+    .imgContent{
+        width: 180px;
+    }
+}
