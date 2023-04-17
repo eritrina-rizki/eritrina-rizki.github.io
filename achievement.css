@@ -42,7 +42,7 @@
 }
 
 .tabBtn:hover{
-    background: antiquewhite;
+    background: #fff1f4;
     font-weight: 700;
     color:#D1B264;
     transition: all 0.3s ease;
@@ -73,7 +73,7 @@
     height: fit-content;
     margin: 12px 0;
     padding: 25px;
-    background: antiquewhite;
+    background: #fff1f4;
     border-right: 3px solid #D1B264;
     font-size: 18px;
     font-weight: 400;
@@ -104,7 +104,7 @@
     height: 0px;
     position: absolute;
     border-style: solid;
-    border-color: transparent antiquewhite transparent transparent;
+    border-color: transparent #fff1f4 transparent transparent;
     border-width: 8px;
     left: 128px;
 }
@@ -217,7 +217,6 @@
     }
     .tabBtn{
         font-size: 14px;
-        padding: 0 5px;
     }
     .paragraph{
         font-size: 14px;

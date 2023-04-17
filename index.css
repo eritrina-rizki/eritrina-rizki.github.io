@@ -373,6 +373,7 @@ nav{
     width: 100%;
     outline: none;
     border: 1px solid #ffffff2f;
+    border-radius: 0;
     color: white;
     background-color: #ffffff1e;
     font-size: 18px;
