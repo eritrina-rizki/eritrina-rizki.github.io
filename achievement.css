@@ -155,7 +155,6 @@
         left: 67px;
     }
     .tabBtn{
-        padding: 5px;
         font-size: 20px;
     }
     .paragraph{
@@ -172,8 +171,7 @@
     }
     .tabBtn{
         width: fit-content;
-        padding: 0 10px;
-        font-size: 18px;
+        padding: 5px 10px;
     }
     .contentContainer{
         margin: 30px 60px;
@@ -194,9 +192,7 @@
     .header{
         height: 220px;
     }
-    .tabBtn{
-        font-size: 16px;
-    }
+
     .contentContainer{
         margin: 30px;
     }

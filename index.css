@@ -492,6 +492,10 @@ nav{
     margin-right: 10px;
 }
 
+#namaOutput, #tanggalOutput, #jenisOutput, #waktuOutput{
+    text-transform: capitalize;
+}
+
 .divider{
     margin-right: 10px;
 }
@@ -528,7 +532,7 @@ nav{
         margin: 0;
     }
     .titleTagline, .descriptionTagline{
-        width: 1500px;
+        max-width: 1500px;
         justify-content: center;
     }
     .contentOur, .containerFooter{
@@ -541,9 +545,7 @@ nav{
 }
 
 @media(max-width: 1140px){
-    .header{
-        height: fit-content;
-    }
+
     .hero{
         margin: auto 10px;
     }
@@ -599,6 +601,9 @@ nav{
 }
 
 @media(max-width: 715px){
+    .hero{
+        padding: 0;
+    }
     .containerHeader{
         width: 72%;
         justify-content: space-between;  

@@ -147,6 +147,13 @@
                     </div>
                     <p id="pesanOutput"></p>
                 </div>
+                <div class="output">
+                    <div class="labelOutput">
+                    <label for="waktuOutput">Sent at</label>
+                    <p class="divider">:</p>
+                    </div>
+                    <p id="waktuOutput"></p>
+                </div>
             </div>
         </div>
         <div class="author">
@@ -164,6 +171,7 @@
             var ttl = document.forms['form']['tanggalLahir'].value;
             var jk = document.forms['form']['jenisKelamin'].value;
             var pesan = document.forms['form']['pesan'].value;
+            var waktu = new Date();
 
             if (nama == "" || ttl == "" || jk == "" || pesan == "") {
                 alert("Please complete all the form field")
@@ -174,6 +182,7 @@
             document.getElementById('tanggalOutput').innerText = ttl;
             document.getElementById('jenisOutput').innerText = jk;
             document.getElementById('pesanOutput').innerText = pesan;
+            document.getElementById('waktuOutput').innerText = waktu;
             
             return false;
         }
