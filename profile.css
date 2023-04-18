@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 @import url(./index.css);
 
+
+/* HEADER BACKGROUND */
 .header{
     width: 100%;
     height: 300px;
@@ -8,6 +10,9 @@
     background-position: center -100px;
     animation: none;
 }
+
+
+/* HERO */
 
 #navbarProfile{
     color: #D1B264;
@@ -29,6 +34,9 @@
     color: #D1B264;
 }
 
+
+/* CONTENTS */
+
 .profileContent{
     height: fit-content;
     margin: 60px 120px;
@@ -41,6 +49,9 @@
 .profileContent img{
     width: 100%;
 }
+
+
+/* SLIDESHOW */
 
 .slideshowContainer{
     position: relative;
@@ -90,6 +101,9 @@
     to {opacity: 1;}
 }
 
+
+/* ABOUT */
+
 .about{
     width: 100%;
     display: flex;
@@ -132,6 +146,9 @@
     top: -40px;
     transition: all 0.3s ease;
 }
+
+
+/* VISION MISION */
 
 .vimiBg{
     height: 650px;
@@ -181,6 +198,9 @@ li{
     padding-top: 10px;
     list-style-position: inside;
 }
+
+
+/* FOOTER */
 
 .authorLine{
     margin-top: 20px;
