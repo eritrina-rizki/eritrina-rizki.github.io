@@ -1,6 +1,8 @@
 # eritrina-rizki.github.io
 My First Website - Mini Coding Project RevoU
-
+<br><br>
+Github page: https://eritrina-rizki.github.io
+<hr>
 This project is a mini coding project that was done after taking a Software Engineering Fundamental Course held by RevoU start from April 10th, 2023 until April 19th,2023. This project is about deploying a school profile website using HTML, CSS, and Javascript for client side. In this project, I also implement a responsive design. This is the preview of my website on desktop:
 <br><br>
 ![social-preview](https://user-images.githubusercontent.com/129740560/232855683-6f139a4d-34b6-4e13-89ae-4d277a939732.png)
